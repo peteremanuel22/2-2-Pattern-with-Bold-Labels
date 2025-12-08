@@ -402,3 +402,28 @@ if generate:
 
         except Exception as e:
             st.error(f"An error occurred: {e}")
+
+# ==== Centered footer ====
+footer_css = """
+<style>
+.app-footer {
+  position: fixed;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 14px;
+}
+</style>
+"""
+footer_html = """
+<div class="app-footer">✨ تم التنفيذ بواسطة م / بيتر عمانوئيل – جميع الحقوق محفوظة © 2025 ✨</div>
+"""
+st.markdown(footer_css, unsafe_allow_html=True)
+
+

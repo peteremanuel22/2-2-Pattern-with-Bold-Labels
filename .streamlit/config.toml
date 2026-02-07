@@ -1,0 +1,7 @@
+[server]
+maxUploadSize = 1024
+fileWatcherType = "none"
+enableCORS = false
+
+[browser]
+gatherUsageStats = false

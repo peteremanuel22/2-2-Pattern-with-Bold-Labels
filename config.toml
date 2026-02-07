@@ -1,8 +1,0 @@
-[server]
-maxUploadSize = 1024          # MB (adjust as you need; default 200MB)
-enableCORS = false
-headless = true
-fileWatcherType = "none"      # reduces CPU overhead
-
-[browser]
-gatherUsageStats = false
